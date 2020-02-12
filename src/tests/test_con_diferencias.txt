@@ -1,0 +1,23 @@
+Suma de cada diferencia x=  1
+[123, 957, 595, 431]
+
+Suma de cada diferencia x=  2
+[770, 1514, 790, 342]
+
+Suma de cada diferencia x=  3
+[528, 752, 754, 641]
+
+Suma de cada diferencia x=  4
+[1329, 793, 899, 648]
+
+Suma de cada diferencia x=  5
+[730, 1177, 1721, 364]
+
+Suma de cada diferencia x=  6
+[869, 771, 1580, 489]
+
+Suma de cada diferencia x=  7
+[996, 499, 1119, 411]
+
+Suma de cada diferencia x=  8
+[396, 425, 881, 319]
