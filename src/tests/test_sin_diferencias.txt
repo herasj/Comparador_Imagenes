@@ -1,0 +1,23 @@
+Suma de cada diferencia x=  1
+[440, 11847, 8945, 10746]
+
+Suma de cada diferencia x=  2
+[13054, 9136, 13801, 3947]
+
+Suma de cada diferencia x=  3
+[11551, 6467, 856, 7795]
+
+Suma de cada diferencia x=  4
+[10113, 13534, 11703, 12752]
+
+Suma de cada diferencia x=  5
+[11727, 6322, 10923, 6586]
+
+Suma de cada diferencia x=  6
+[10927, 13868, 10812, 3916]
+
+Suma de cada diferencia x=  7
+[9179, 9390, 8940, 12193]
+
+Suma de cada diferencia x=  8
+[11231, 13376, 5483, 10478]
