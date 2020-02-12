@@ -11,17 +11,17 @@ import copy
 recortar() # Llamar funcion de recortado
 
 imgs=cargarImgs() #Carga todas las imagenes en /src/crop
-
+dim=imgs[0].height; #Altura de las imagenes
 target=imgs[0].load()
-target_b=getborders(target,166)
+target_b=getborders(target,dim)
 
 #Ubicar imagenes adyacentes a 0
 for x in range(1,9):
     test=imgs[x].load()
-    test_b=getborders(test,166)
+    test_b=getborders(test,dim)
     print("Suma de cada diferencia x= ",x)
-    resultado = restar_l(target_b,test_b,166)
-    print(sumar_subl(resultado,166))
+    resultado = restar_l(target_b,test_b,dim)
+    print(sumar_subl(resultado,dim))
     print('')
 
 # print("(Diferencia de bordes) Imagen numero 1")
