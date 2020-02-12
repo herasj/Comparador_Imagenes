@@ -30,13 +30,30 @@ def mostrar(img1,img2,h):
     print(b2)
     print("Resta de bordes")
     print(resta)
+
+def getborders(img,h):
+    bordes=[] #Lista que contiene las demás
+    up=[]
+    left=[]
+    right=[]
+    down=[]
+
+    #Bordes
+    for x in range (0, h):
+        up.append(img[x,0]) #[X,Y]  Superior
+        down.append(img[x,h-1]) #Inferior
+        left.append(img[0,x]) #Izquierda
+        right.append(img[h-1,x]) #Derecha
+
+    #Estructura de bordes [[up],[down],[left],[right]]
+    bordes.append(up);bordes.append(down);bordes.append(left);bordes.append(right)
+    return bordes
 recortar() # Llamar funcion de recortado
 
 imgs=cargarImgs()
 tempi=imgs[0].load()
-tempi2=imgs[1].load()
-mostrar(tempi,tempi2,166)
-
+b=getborders(tempi,166)
+print(b)
 
 # diff = ImageChops.difference(img1, img2)
 
