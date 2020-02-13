@@ -111,11 +111,17 @@ def mueve(grid,n1,n2,mov):
                 print("ERROR: No hay espacio en el grid para n1= ",n1," y n2= ",n2, "con mov= ",mov)
                 print(grid)
     return grid
-    
+
 def esta (grid,n):
     res=[-1,-1]
+    if((len(grid[0])==0) and (len(grid[1])==0) and (len(grid[2])==0)): 
+        return res
+
     for x in range(0,len(grid)):
-        for y in range(0,3):
-            if(grid[x][y]==n):
-                res[0]=x
-                res[1]=y
+        if(len(grid[x])!=0):
+            for y in range(0,len(grid[x])):
+                if(grid[x][y]==n):
+                    res[0]=x
+                    res[1]=y
+
+    return res

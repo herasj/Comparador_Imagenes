@@ -2,7 +2,7 @@ from crop import recortar
 from list_ops import sumar_subl
 from list_ops import restar_l
 from list_ops import menor
-from mueve import menor
+from list_ops import mueve
 from imgs import cargarImgs
 from borders import getborders
 from PIL import Image
@@ -35,6 +35,8 @@ for x in range (0,9):
             #print('Suma de cada diferencia target = ',str(x),' y= ',str(y),' ',suma)
             if (nro_menor[0]<=1500):
                 gridlist=mueve(gridlist,x,y,nro_menor[1])
+                print("Asi va la grid")
+                print(gridlist)
 
 print("grid final")
 print(gridlist)
