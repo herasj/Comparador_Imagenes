@@ -10,8 +10,9 @@ from string import Template
 import copy
 import numpy as np
 
-grid=np.array([[-1,-1,-1],[-1,-1,-1],[-1,-1,-1]]) #Grid de imagenes a construir
+# grid=np.array([[-1,-1,-1],[-1,-1,-1],[-1,-1,-1]]) #Grid de imagenes a construir
 gridlist=[[],[],[]]
+centro=[]
 ady=[] #[label,up,down,left,right]
 targets=[0,1,2,3,4,5,6,7,8] #Lista de objetivos
 
@@ -23,6 +24,12 @@ dim=imgs[0].height; #Altura de las imagenes
 
 #Ubicar imagenes adyacentes a x
 for x in range (0,9):
+    if(len(centro)!=5):
+        centro.clear()
+    else:
+        print("Se rompió el for")
+        break
+    centro.append(copy.deepcopy(x)) #Añadir el nodo a comparar
     target=imgs[x].load()
     target_b=getborders(target,dim)
     ady.clear()
@@ -33,17 +40,18 @@ for x in range (0,9):
             resta = restar_l(target_b,test_b,dim)
             suma=sumar_subl(resta,dim)
             nro_menor=menor(suma)
-            #print('Suma de cada diferencia target = ',str(x),' y= ',str(y),' ',suma)
+            print('Suma de cada diferencia target = ',str(x),' y= ',str(y),' ',suma)
             if (nro_menor[0]<=1500):
-                gridlist=mueve(gridlist,x,y,nro_menor[1])
-                
-print("grid final")
-print(gridlist)
+                centro.append(nro_menor[1])
+                # gridlist=mueve(gridlist,x,y,nro_menor[1])
+print('El centro es: ',centro)       
+# print("grid final")
+# print(gridlist)
 
-contador=0
-for x in range(0,len(gridlist)):
-    for y in range(0,len(gridlist)):
-        t = Template('./src/orden/$name.jpg') #Path de guardado
-        path = t.substitute(name=contador) #Template string
-        imgscolor[gridlist[x][y]].save(path) #Guardar ordenados
-        contador=contador+1
+# contador=0
+# for x in range(0,len(gridlist)):
+#     for y in range(0,len(gridlist)):
+#         t = Template('./src/orden/$name.jpg') #Path de guardado
+#         path = t.substitute(name=contador) #Template string
+#         imgscolor[gridlist[x][y]].save(path) #Guardar ordenados
+#         contador=contador+1
