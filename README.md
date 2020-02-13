@@ -16,7 +16,6 @@ Activar entorno
 
  1. numpy
  2. pillow
- 3. opencv (No usada de momento)
 
 
 > *Ay Dios mío tu, Tu viejito, tu que tienes el poder por favor mete la mano antes de que se forme una machetera!!!!*
