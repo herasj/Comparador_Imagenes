@@ -125,3 +125,21 @@ def esta (grid,n):
                     res[1]=y
 
     return res
+def centrar (grid,centro):
+    #Si el mov es 0, n2 queda a la derecha de n1
+    #Si el mov es 1, n2 queda arriba de n1
+    #Si el mov es 2, n2 queda debajo de n1
+    #Si el mov es 3, n2 queda a la izquierda de n1
+    grid[1].append(centro[0])
+    for x in range(1,5):
+        if(centro[x][0]==0):
+            grid[1].append(centro[x][1])
+        elif (centro[x][0]==1):
+            grid[0].insert(1,centro[x][1])
+        elif (centro[x][0]==2):
+            grid[2].insert(1,centro[x][1])
+        elif (centro[x][0]==3):
+            grid[1].insert(0,centro[x][1])
+    print("Asi quedó la grid")
+    print(grid)
+    return grid
