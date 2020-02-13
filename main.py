@@ -15,7 +15,7 @@ gridlist=[[],[],[]]
 ady=[] #[label,up,down,left,right]
 targets=[0,1,2,3,4,5,6,7,8] #Lista de objetivos
 
-#recortar() # Llamar funcion de recortado
+recortar() # Llamar funcion de recortado
 
 imgs=cargarImgs(False) #Carga todas las imagenes en /src/crop
 imgscolor=cargarImgs(True) #Carga las imagenes con colores
