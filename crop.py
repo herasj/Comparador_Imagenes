@@ -6,7 +6,7 @@ def recortar():
     size=[] #Inicializar lista
 
     #Abrir imagen principal
-    im = Image.open('./src/img/TestSquare.jpg')# Imagen Cuadrada !
+    im = Image.open('./src/img/img.jpg')# Imagen Cuadrada !
     dim = (im.height) #Las dimensiones de la imagen
 
     #Coordenadas del recorte

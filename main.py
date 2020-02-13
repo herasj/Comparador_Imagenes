@@ -28,4 +28,4 @@ for x in range (0,9):
             test_b=getborders(test,dim)
             resta = restar_l(target_b,test_b,dim)
             suma=sumar_subl(resta,dim)
-            print("Suma de cada diferencia target = ",x," y= ",y,+" "+suma)
+            print('Suma de cada diferencia target = ',str(x),' y= ',str(y),' ',suma)
