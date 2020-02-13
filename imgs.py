@@ -1,12 +1,15 @@
 from PIL import Image
 from string import Template
 #Funcion de carga
-def cargarImgs():
+def cargarImgs(color):
     imgs=[]
     for x in range(0,9):
         t = Template('./src/crop/$name.jpg') #Path de carga
         path = t.substitute(name=x) #Template string
-        imgs.append(Image.open(path).convert("L"))
+        if(color==False):
+            imgs.append(Image.open(path).convert("L"))
+        else:
+             imgs.append(Image.open(path))
     return imgs
 
 

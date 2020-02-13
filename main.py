@@ -35,8 +35,6 @@ for x in range (0,9):
             #print('Suma de cada diferencia target = ',str(x),' y= ',str(y),' ',suma)
             if (nro_menor[0]<=1500):
                 gridlist=mueve(gridlist,x,y,nro_menor[1])
-                print("Asi va la grid")
-                print(gridlist)
-
+                
 print("grid final")
 print(gridlist)
