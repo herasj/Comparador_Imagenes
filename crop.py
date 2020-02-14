@@ -15,7 +15,7 @@ def recortar():
     size.append(math.floor(2*dim/3))
     size.append(dim)
 
-    cont=0
+    cont=8
 
     for y in range(0,3):
         for x in range(0,3):
@@ -27,4 +27,4 @@ def recortar():
             dw=up+size[1] #y+h
             recorte = im.crop((l,up,r,dw)) #(x,y,x+w,y+h) coordenadas
             recorte.save(path) #Guardar imagen recortada
-            cont=cont+1;
+            cont=cont-1;
