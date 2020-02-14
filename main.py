@@ -19,6 +19,7 @@ recortar() # Llamar funcion de recortado
 
 imgs=cargarImgs(False) #Carga todas las imagenes en /src/crop
 imgscolor=cargarImgs(True) #Carga las imagenes con colores
+org=Image.open('./src/img/img.jpg')
 dim=imgs[0].height; #Altura de las imagenes
 
 #Buscar el centro
@@ -76,3 +77,5 @@ for x in range(0,len(gridlist)):
         path = t.substitute(name=contador) #Template string
         imgscolor[gridlist[x][y]].save(path) #Guardar ordenados
         contador=contador+1
+print('Imagen completa')
+org.show(command='fim')#Mostrar por fim
