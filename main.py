@@ -9,9 +9,7 @@ from borders import getborders
 from PIL import Image
 from string import Template
 import copy
-import numpy as np
 
-# grid=np.array([[-1,-1,-1],[-1,-1,-1],[-1,-1,-1]]) #Grid de imagenes a construir
 gridlist=[[],[],[]]
 centro=[]
 ady=[] #[label,up,down,left,right]

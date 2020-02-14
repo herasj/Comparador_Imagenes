@@ -2,7 +2,4 @@ name: comparador-imgs
 channels:
   - https://conda.anaconda.org/menpo
 dependencies:
-  - numpy
   - pillow
-  - opencv3
-  - matplotlib

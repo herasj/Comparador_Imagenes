@@ -14,8 +14,7 @@ Activar entorno
 
 ### Dependencias
 
- 1. numpy
- 2. pillow
+ Pillow
 
 
 > *Ay Dios mío tu, Tu viejito, tu que tienes el poder por favor mete la mano antes de que se forme una machetera!!!!*
