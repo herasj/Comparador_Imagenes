@@ -130,6 +130,7 @@ def centrar (grid,centro):
     #Si el mov es 1, n2 queda arriba de n1
     #Si el mov es 2, n2 queda debajo de n1
     #Si el mov es 3, n2 queda a la izquierda de n1
+
     grid[1].append(centro[0])
     for x in range(1,5):
         if(centro[x][0]==0):

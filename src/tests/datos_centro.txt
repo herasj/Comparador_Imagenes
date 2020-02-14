@@ -1,0 +1,19 @@
+Suma de cada diferencia target =  3  y=  0   [9748, 8787, 10134, 7519]
+Suma de cada diferencia target =  3  y=  1   [5464, 3204, 5636, 4598]
+Suma de cada diferencia target =  3  y=  2   [9031, 1095, 3907, 5120]
+Suma de cada diferencia target =  3  y=  4   [4147, 4117, 12077, 5025]
+Suma de cada diferencia target =  3  y=  5   [9953, 5470, 15111, 5596]
+Suma de cada diferencia target =  3  y=  6   [731, 5702, 9510, 6023]
+Suma de cada diferencia target =  3  y=  7   [12251, 5881, 1451, 8714]
+Suma de cada diferencia target =  3  y=  8   [4135, 6911, 6803, 1506]
+
+...
+
+Suma de cada diferencia target =  8  y=  0   [12251, 5881, 1451, 8714]
+Suma de cada diferencia target =  8  y=  1   [731, 5702, 9510, 6023]
+Suma de cada diferencia target =  8  y=  2   [9031, 1095, 3907, 5120]
+Suma de cada diferencia target =  8  y=  3   [9748, 8787, 10134, 7519]
+Suma de cada diferencia target =  8  y=  4   [4135, 6911, 6803, 1506]
+Suma de cada diferencia target =  8  y=  5   [5464, 3204, 5636, 4598]
+Suma de cada diferencia target =  8  y=  6   [9953, 5470, 15111, 5596]
+Suma de cada diferencia target =  8  y=  7   [4147, 4117, 12077, 5025]

@@ -41,12 +41,15 @@ for x in range (0,9):
             resta = restar_l(target_b,test_b,dim)
             suma=sumar_subl(resta,dim)
             nro_menor=menor(suma)
-            if (nro_menor[0]<=1500):
+            print('Suma de cada diferencia target = ',str(x),' y= ',str(y),' ',suma)
+            if (nro_menor[0]<=1800):
                 centro.append([nro_menor[1],y])
  
- 
-print('El centro es: ',centro)
-gridlist=centrar(gridlist,centro)
+if(len(centro)<5):
+    print('ERROR: No se reconoce centro')
+else:
+    print('El centro es: ',centro)
+    gridlist=centrar(gridlist,centro)
 
 #Acomodar casillas restantes
 for x in range (0,9):
@@ -61,7 +64,7 @@ for x in range (0,9):
             suma=sumar_subl(resta,dim)
             nro_menor=menor(suma)
             # print('Suma de cada diferencia target = ',str(x),' y= ',str(y),' ',suma)
-            if (nro_menor[0]<=1600):
+            if (nro_menor[0]<=1800):
                 gridlist=mueve(gridlist,x,y,nro_menor[1])
 
 #Imprimir resultado
