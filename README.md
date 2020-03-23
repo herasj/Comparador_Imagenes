@@ -16,5 +16,3 @@ Activar entorno
 
  Pillow
 
-
-> *Ay Dios mío tu, Tu viejito, tu que tienes el poder por favor mete la mano antes de que se forme una machetera!!!!*
